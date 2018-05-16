@@ -2359,7 +2359,9 @@
           <span class="hljs-string">"priority"</span>
         ]
       </span>}</span>,
-      "<span class="hljs-attribute">urls</span>": <span class="hljs-value"><span class="hljs-string">"/users/U000000001/services/S000000003"</span></span>,
+      "<span class="hljs-attribute">urls</span>": <span class="hljs-value">[
+        <span class="hljs-string">"/users/U000000001/services/S000000003"</span>
+      ]</span>,
       "<span class="hljs-attribute">actionAt</span>": <span class="hljs-value"><span class="hljs-string">"YYYY-MM-DDTHH:mm:ss.sssZ"</span>
     </span>}
   ]
@@ -2390,19 +2392,18 @@
               </span>}</span>,
               "<span class="hljs-attribute">columns</span>": <span class="hljs-value">{
                 "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-                "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
-                  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
-                </span>}</span>,
                 "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"変更項目"</span>
               </span>}
             </span>}</span>,
             "<span class="hljs-attribute">required</span>": <span class="hljs-value">[
-              <span class="hljs-string">"action"</span>
+              <span class="hljs-string">"action"</span>,
+              <span class="hljs-string">"columns"</span>
             ]</span>,
+            "<span class="hljs-attribute">additionalProperties</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
             "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"変更対象"</span>
           </span>}</span>,
           "<span class="hljs-attribute">urls</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
             "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"変更後リソースのURL"</span>
           </span>}</span>,
           "<span class="hljs-attribute">actionAt</span>": <span class="hljs-value">{
@@ -2412,7 +2413,6 @@
         </span>}</span>,
         "<span class="hljs-attribute">required</span>": <span class="hljs-value">[
           <span class="hljs-string">"actionType"</span>,
-          <span class="hljs-string">"private"</span>,
           <span class="hljs-string">"actionAt"</span>
         ]
       </span>}
